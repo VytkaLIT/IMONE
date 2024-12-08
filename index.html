@@ -4,28 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your GitHub Website</title>
+    <title>Your Professional GitHub Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My GitHub Website</h1>
-        <p>This is a simple grey and black theme.</p>
+        <div class="container">
+            <h1>Welcome to My Professional Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
+
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Here is some information about myself...</p>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I'm a passionate web developer with a strong foundation in front-end and back-end technologies. I love creating user-centric websites and applications.</p>
+            </div>
         </section>
-        <section>
-            <h2>Projects</h2>
-            <p>Check out my repositories on GitHub.</p>
+
+        <section id="projects" class="section bg-dark">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-list">
+                    <div class="project-item">
+                        <h3>Project One</h3>
+                        <p>A description of the first project, including technologies used and outcomes.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project Two</h3>
+                        <p>A description of the second project, including technologies used and outcomes.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project Three</h3>
+                        <p>A description of the third project, including technologies used and outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Created by Your Name &copy; 2024</p>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
